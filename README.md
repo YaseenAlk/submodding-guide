@@ -72,12 +72,12 @@ where `<submodule-branch-name>` is the branch made earlier, `<remote repo URL>` 
 ### Initializing the submodule
 In the root folder of your repository-of-interest, run the following command:
 ```shell
-git submodule update --init
+git submodule update --init --recursive
 ```
 
 ### Fetching and applying updates to the submodule
 ```shell
-git submodule update --remote
+git submodule update --remote --recursive
 ```
 Note 1: if you have multiple submodules in your repository-of-interest, this command will fetch/update all of them.
 
