@@ -51,6 +51,8 @@ This branch can now be referenced as a submodule in other git repos!
 ### Making changes to this branch
 You can still commit and push changes to this branch whenever you need to! After you've commited changes to the submodule'd branch, do the `Fetching and applying updates to the submodule` step listed below. 
 
+---
+
 ## Using the "submodule branch" that you just made
 When you follow the steps below, your repository-of-interest should end up with 2 new additions: a `.gitmodules` file and a reference to the submodule's folder. You will need to add/commit/push these files. Whenever you make changes in the repo that you are submoduling, you will need to fetch and apply the updates in your repository-of-interest (refer to the step below: `Fetching and applying updates to the submodule`); then, you need to add/commit/push the above files once again.
 
