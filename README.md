@@ -46,6 +46,12 @@ Look through the branch's files and see if any unwanted files were kept. Make su
 If any folders got moved around, then you might need to edit the contents of your `.gitignore`.
 
 ### Step 6: Push your newly-created branch!
+Note that `git filter-branch` rewrites history, so you need to force push it.
+```shell
+git push -f
+```
+If it's a new branch, you may need to set the upstream first.
+
 This branch can now be referenced as a submodule in other git repos!
 
 ### Making changes to this branch
