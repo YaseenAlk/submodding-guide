@@ -37,7 +37,7 @@ For example, in [this branch](https://github.com/YaseenAlk/face_api_testing/tree
 ```shell
 git filter-branch -f --prune-empty --index-filter 'git rm --cached -r -q -- . ; git reset -q $GIT_COMMIT -- python/PythonFaceIDHelper LICENSE README.md .gitignore .vscode'
 ```
-This example command kept the files `LICENSE` `README.md` `.gitignore`, kept the folder `.vscode` as-is, and extracted + kept all of the contents within the folder `python/PythonFaceIDHelper`.
+This example command kept the files `LICENSE`, `README.md`, and `.gitignore`, kept the folder `.vscode` as-is, and extracted + kept all of the contents within the folder `python/PythonFaceIDHelper`.
 
 ### Step 4: Delete any files that were skipped because of your `.gitignore`
 Look through the branch's files and see if any unwanted files were kept. Make sure that the unwanted files were not accidentally included in the previous step. If they were not supposed to be included, then it's most likely because of your `.gitignore`. If this is the case, then you should be able to delete these files without changing the `git status`.
